@@ -8,8 +8,14 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/admin/javascripts/global.js" type="text/javascript" charset="utf-8"></script>
-<script src="/ckeditor/ckeditor.js" type="text/javascript"></script>
-<script src="/ckfinder/ckfinder.js" type="text/javascript"></script>
+<script src="/admin/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script src="/admin/ckfinder/ckfinder.js" type="text/javascript"></script>
+<script type="text/javascript">
+	window.onload = function(){
+	 editor = CKEDITOR.replace( 'editor1' );
+   CKFinder.setupCKEditor( editor, '/admin/ckfinder/' ) ;
+  };
+</script>
 </head>
 
 <body>

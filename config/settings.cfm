@@ -13,8 +13,9 @@
 	<cfset set(URLRewriting="Partial")>
 --->
 
-<cfset set(dataSourceName='elowcountry2')>
+<cfset set(dataSourceName='changethis')>
+<cfset application.dsn = 'changethis'>
 <cfset set(URLRewriting="On")>
-<cfset application.dsn = 'elowcountry2'>
 <cfset set(showDebugInformation="false")>
 <cfsetting showDebugOutput="No">
+<cfset set(reloadPassword="icndcms2012!")>

@@ -3,3 +3,17 @@ This is a generic CMS with a couple of pre-installed modules:
 - Pages
 
 - Contacts
+
+You will need to update the following files/info:
+
+1. /config/settings.cfm
+
+	- update the datasource names
+	
+	<cfset set(dataSourceName='changethis')>
+	<cfset application.dsn = 'changethis'>
+
+
+2. /config/environment.cfm
+
+	- when site goes live, update this to 'production'
